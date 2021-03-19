@@ -14,3 +14,7 @@ Erlang Test Tool
                         y => 1616169498008,name => <<"q">>,
                         z => 1,v => <<"q">>,
                         u => <<"/">>}}]},
+
+### Lists Member
+
+?assert(lists:member(Value, List)),
