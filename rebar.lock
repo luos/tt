@@ -1,0 +1,8 @@
+[{<<"erlang_katana">>,
+  {git,"git://github.com/inaka/erlang-katana.git",
+       {ref,"01fba28bf1c1b76124c1f1c865920e8f9cd494fc"}},
+  0},
+ {<<"parse_trans">>,
+  {git,"git://github.com/uwiger/parse_trans.git",
+       {ref,"4c4990dc8b0842421888794e5d8031f097de239f"}},
+  0}].

@@ -1,0 +1,18 @@
+-module(example_test).
+-compile({parse_transform, tt}).
+
+-include_lib("eunit/include/eunit.hrl").
+
+example_test() ->
+    Haystack = lists:seq(0, 10000),
+    tt:assert(lists:member(-1, Haystack)).
+
+
+assert_member(Elem, List) -> 
+      case lists:member(Elem, List) of 
+            true ->
+                  ok;
+            false -> 
+                  ?debugFmt("Failed to assert that '~p' is in '~p' ", [Elem, List]),
+                  ?assert(false, "Assert member failed")
+      end.
