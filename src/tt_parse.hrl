@@ -1,0 +1,2 @@
+-type stmt_catch() :: {'catch', Line :: non_neg_integer(), parse_form()}.
+-type parse_form() :: term().
